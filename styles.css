@@ -37,3 +37,7 @@ footer{padding-top:16px!important;padding-bottom:16px!important}
 #interestForm label{font-size:12px!important;letter-spacing:.06em!important}
 #interestForm input,#interestForm select,#interestForm textarea{font-size:14px!important;line-height:1.55!important}
 #interestForm .btn{font-family:'DM Sans',sans-serif!important;font-weight:700!important}
+
+/* Shift hero photo crop right to reduce empty black space on left */
+.hero-photo img{object-position:62% center!important}
+@media(max-width:800px){.hero-photo img{object-position:60% center!important}}
