@@ -52,3 +52,6 @@ footer{padding-top:16px!important;padding-bottom:16px!important}
 @media(min-width:801px){.hero-photo{overflow:hidden!important}.hero-photo img{width:112%!important;max-width:none!important;height:100%!important;object-fit:cover!important;object-position:center center!important;transform:translateX(-4%)!important}}
 
 @media(min-width:801px){.hero-photo.cropped-home{overflow:hidden!important}.hero-photo.cropped-home img{width:125%!important;max-width:none!important;height:100%!important;object-fit:cover!important;object-position:center!important;transform:translateX(-8%)!important}}
+
+/* Strong final desktop crop: substantially remove left black strip */
+@media(min-width:801px){.hero-photo.cropped-home{overflow:hidden!important}.hero-photo.cropped-home img{width:150%!important;max-width:none!important;height:100%!important;object-fit:cover!important;object-position:center center!important;transform:translateX(-18%)!important}}
