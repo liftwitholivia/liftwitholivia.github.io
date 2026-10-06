@@ -9,3 +9,9 @@
 .hero{background:var(--paper);color:var(--black)}
 .hero-copy{background:var(--paper);color:var(--black)}
 .hero-copy .micro{color:var(--muted)}
+
+/* Strong contrast on light hero */
+.hero-copy,.hero-copy p,.hero-copy h1,.hero-copy strong{color:var(--black)!important}
+.hero-copy h1 em,.hero-copy .eyebrow{color:var(--accent)!important}
+.hero-copy .micro{color:#4f4d47!important}
+.hero-copy .btn{color:#fff!important}
