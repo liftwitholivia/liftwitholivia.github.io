@@ -55,3 +55,6 @@ footer{padding-top:16px!important;padding-bottom:16px!important}
 
 /* Strong final desktop crop: substantially remove left black strip */
 @media(min-width:801px){.hero-photo.cropped-home{overflow:hidden!important}.hero-photo.cropped-home img{width:150%!important;max-width:none!important;height:100%!important;object-fit:cover!important;object-position:center center!important;transform:translateX(-18%)!important}}
+
+/* Preserve original hero image scale; crop only the left edge */
+@media(min-width:801px){.hero-photo.cropped-home{overflow:hidden!important}.hero-photo.cropped-home img{width:100%!important;max-width:none!important;height:100%!important;object-fit:cover!important;object-position:58% center!important;transform:none!important}}
