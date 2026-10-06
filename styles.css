@@ -41,3 +41,6 @@ footer{padding-top:16px!important;padding-bottom:16px!important}
 /* Shift hero photo crop right to reduce empty black space on left */
 .hero-photo img{object-position:62% center!important}
 @media(max-width:800px){.hero-photo img{object-position:60% center!important}}
+
+/* More noticeable desktop hero crop */
+@media(min-width:801px){.hero-photo img{width:118%!important;max-width:none!important;object-fit:cover!important;object-position:72% center!important;transform:translateX(-7%)}}
