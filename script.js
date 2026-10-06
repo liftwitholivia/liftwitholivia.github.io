@@ -19,4 +19,4 @@ if(philosophyHeading){
 }
 
 const form=document.querySelector('#interestForm');
-if(form){form.addEventListener('submit',e=>{e.preventDefault();const note=document.querySelector('#formNote');if(note){note.textContent="Thanks — the visual demo is working. Next we'll connect this form to your real enquiry inbox or booking system.";note.style.fontWeight='700';}});}
+if(form){form.addEventListener('submit',async e=>{e.preventDefault();const note=document.querySelector('#formNote');const button=form.querySelector('button[type="submit"]');if(button){button.disabled=true;button.textContent='SENDING…';}try{const response=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}});if(response.ok){form.reset();if(note){note.textContent="Thanks! Your enquiry has been sent. I’ll be in touch soon 🧡";note.style.fontWeight='700';}}else{throw new Error('Form submission failed');}}catch(err){if(note){note.textContent="Sorry, something went wrong. Please try again or contact me on Instagram @liv_mcginn.";note.style.fontWeight='700';}}finally{if(button){button.disabled=false;button.textContent='SEND MY ENQUIRY →';}}});}
