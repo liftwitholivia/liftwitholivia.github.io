@@ -1,9 +1,9 @@
-// Always open the site at the top unless the visitor intentionally used a section link.
-if(!window.location.hash){
-  if('scrollRestoration' in history) history.scrollRestoration='manual';
-  window.scrollTo(0,0);
-  window.addEventListener('pageshow',()=>window.scrollTo(0,0));
-}
+// Always start a fresh visit on the homepage hero.
+if('scrollRestoration' in history) history.scrollRestoration='manual';
+const resetHome=()=>{if(!window.location.hash) window.scrollTo({top:0,left:0,behavior:'instant'});};
+resetHome();
+window.addEventListener('load',resetHome);
+window.addEventListener('pageshow',resetHome);
 
 const header=document.querySelector('header');
 const menu=document.querySelector('.menu');
