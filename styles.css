@@ -67,3 +67,6 @@ footer{padding-top:16px!important;padding-bottom:16px!important}
 
 /* Mobile hero trim requested: remove left black strip without zooming */
 @media(max-width:800px){.hero-photo.cropped-home{overflow:hidden!important}.hero-photo.cropped-home img{width:100%!important;height:100%!important;object-fit:cover!important;object-position:76% center!important;transform:none!important}}
+
+/* Mobile crop: physically move image left while preserving scale */
+@media(max-width:800px){.hero-photo.cropped-home{overflow:hidden!important}.hero-photo.cropped-home img{width:100%!important;height:100%!important;max-width:none!important;object-fit:cover!important;object-position:center!important;transform:translateX(-12%)!important}}
