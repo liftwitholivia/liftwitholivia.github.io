@@ -1,9 +1,11 @@
-// Always start a fresh visit on the homepage hero.
+// Always start a newly opened/reloaded site on the homepage hero.
 if('scrollRestoration' in history) history.scrollRestoration='manual';
-const resetHome=()=>{if(!window.location.hash) window.scrollTo({top:0,left:0,behavior:'instant'});};
+if(window.location.hash){history.replaceState(null,'',window.location.pathname+window.location.search);}
+const resetHome=()=>window.scrollTo(0,0);
 resetHome();
-window.addEventListener('load',resetHome);
-window.addEventListener('pageshow',resetHome);
+window.addEventListener('DOMContentLoaded',resetHome);
+window.addEventListener('load',()=>{resetHome();setTimeout(resetHome,100);setTimeout(resetHome,500);});
+window.addEventListener('pageshow',()=>{resetHome();setTimeout(resetHome,100);});
 
 const header=document.querySelector('header');
 const menu=document.querySelector('.menu');
