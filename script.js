@@ -1,3 +1,10 @@
+// Always open the site at the top unless the visitor intentionally used a section link.
+if(!window.location.hash){
+  if('scrollRestoration' in history) history.scrollRestoration='manual';
+  window.scrollTo(0,0);
+  window.addEventListener('pageshow',()=>window.scrollTo(0,0));
+}
+
 const header=document.querySelector('header');
 const menu=document.querySelector('.menu');
 if(menu&&header){menu.addEventListener('click',()=>header.classList.toggle('open'));}
