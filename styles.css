@@ -4,3 +4,8 @@
 
 /* Centered compact results grid + gold testimonial stars */
 .progress-track{max-width:620px!important;margin-left:auto!important;margin-right:auto!important;gap:10px!important}.testimonial-track .stars{color:#f5b800!important;letter-spacing:.08em}@media(max-width:800px){.progress-track{max-width:520px!important;margin-left:auto!important;margin-right:auto!important;gap:8px!important}}
+
+/* Light homepage hero copy panel */
+.hero{background:var(--paper);color:var(--black)}
+.hero-copy{background:var(--paper);color:var(--black)}
+.hero-copy .micro{color:var(--muted)}
