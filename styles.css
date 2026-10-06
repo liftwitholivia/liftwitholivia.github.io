@@ -47,3 +47,6 @@ footer{padding-top:16px!important;padding-bottom:16px!important}
 
 /* Final desktop hero crop matched to reference */
 @media(min-width:801px){.hero-photo img{width:100%!important;transform:none!important;object-fit:cover!important;object-position:72% center!important}}
+
+/* Desktop crop: halve the left black strip */
+@media(min-width:801px){.hero-photo{overflow:hidden!important}.hero-photo img{width:112%!important;max-width:none!important;height:100%!important;object-fit:cover!important;object-position:center center!important;transform:translateX(-4%)!important}}
