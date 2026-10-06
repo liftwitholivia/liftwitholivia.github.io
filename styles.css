@@ -18,3 +18,8 @@
 
 /* Exact font match between hero detail and About body */
 .hero-copy .intro-detail{font-family:'Merriweather',serif!important;font-size:14px!important;font-weight:400!important;line-height:1.55!important;color:var(--muted)!important}
+
+/* Tighter transition from enquiry form to footer */
+.apply{padding-bottom:36px!important}
+footer{padding-top:22px!important}
+@media(max-width:800px){.apply{padding-bottom:28px!important}footer{padding-top:18px!important}}
