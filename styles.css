@@ -61,3 +61,6 @@ footer{padding-top:16px!important;padding-bottom:16px!important}
 
 /* Reference crop: preserve original image scale and reveal more of the right side */
 @media(min-width:801px){.hero-photo.cropped-home img{width:100%!important;height:100%!important;max-width:none!important;object-fit:cover!important;object-position:72% center!important;transform:none!important}}
+
+/* Final desktop composition: narrower photo panel, original image scale */
+@media(min-width:801px){.hero{grid-template-columns:46% 54%!important}.hero-photo.cropped-home img{width:100%!important;height:100%!important;max-width:none!important;object-fit:cover!important;object-position:center center!important;transform:none!important}}
