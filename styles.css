@@ -70,3 +70,6 @@ footer{padding-top:16px!important;padding-bottom:16px!important}
 
 /* Mobile crop: physically move image left while preserving scale */
 @media(max-width:800px){.hero-photo.cropped-home{overflow:hidden!important}.hero-photo.cropped-home img{width:100%!important;height:100%!important;max-width:none!important;object-fit:cover!important;object-position:center!important;transform:translateX(-12%)!important}}
+
+/* Restore original mobile hero composition */
+@media(max-width:800px){.hero-photo.cropped-home img{width:100%!important;height:100%!important;max-width:none!important;object-fit:cover!important;object-position:center center!important;transform:none!important}}
