@@ -15,3 +15,6 @@
 .hero-copy h1 em,.hero-copy .eyebrow{color:var(--accent)!important}
 .hero-copy .micro{color:#4f4d47!important}
 .hero-copy .btn{color:#fff!important}
+
+/* Exact font match between hero detail and About body */
+.hero-copy .intro-detail{font-family:'Merriweather',serif!important;font-size:14px!important;font-weight:400!important;line-height:1.55!important;color:var(--muted)!important}
