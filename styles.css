@@ -73,3 +73,6 @@ footer{padding-top:16px!important;padding-bottom:16px!important}
 
 /* Restore original mobile hero composition */
 @media(max-width:800px){.hero-photo.cropped-home img{width:100%!important;height:100%!important;max-width:none!important;object-fit:cover!important;object-position:center center!important;transform:none!important}}
+
+/* Dark brown text accents */
+.coach blockquote,.hero-copy .intro-lead,.testimonial-heading>p,.apply h2,footer>p{color:#160c09!important}
