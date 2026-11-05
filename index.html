@@ -18,7 +18,18 @@ footer > p{
   color:rgb(79,42,32)!important;
   -webkit-text-fill-color:rgb(79,42,32)!important;
   opacity:1!important;
-}</style></head>
+}</style>
+<!-- Optional colour previews: default website remains unchanged. -->
+<script>(function(){var p=new URLSearchParams(location.search).get('pink');if(['blush','rose','bright'].includes(p))document.documentElement.setAttribute('data-pink-preview',p)})();</script>
+<style>
+html[data-pink-preview="blush"]{--accent:#E9A9BD}
+html[data-pink-preview="rose"]{--accent:#D889A5}
+html[data-pink-preview="bright"]{--accent:#E879E8}
+html[data-pink-preview] .hero-copy h1 em,
+html[data-pink-preview] .hero-copy .eyebrow,
+html[data-pink-preview] .what-you-get .eyebrow{color:var(--accent)!important}
+</style>
+</head>
 <body>
 <main id="top">
 <section class="hero"><div class="hero-photo cropped-home"><img src="./Unknown-1.jpeg?v=2" alt="Olivia training in the gym"><span>OLIVIA · STRENGTH COACH</span></div><div class="hero-copy"><p class="eyebrow">1:1 & ONLINE COACHING</p><h1>LIFT WITH <em>Olivia</em></h1><p class="intro"><strong class="intro-lead" style="color:#160c09!important">Coaching for women who want to see a change in themselves.</strong><span class="intro-detail" style="font-family:Merriweather, Georgia, serif !important;font-weight:400 !important;font-size:14px !important;line-height:1.55 !important;color:#706d65 !important;letter-spacing:0 !important;">Personalised training, nutrition, ongoing support and accountability to help you build strength, confidence and a routine you can actually stick to.</span></p><a class="btn light" href="#apply">APPLY FOR COACHING →</a><p class="micro">IN-PERSON · SOUTH WEST LONDON &nbsp;&nbsp; / &nbsp;&nbsp; ONLINE COACHING</p></div></section>
